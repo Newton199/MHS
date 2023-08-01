@@ -288,7 +288,7 @@ $lang['history'] = 'Sejarah';
 
 
 
-$lang['system_title'] = 'Multi Hospital';
+$lang['system_title'] = 'Hamro Hospital';
 
 $lang['gross_total'] =  'Total Kotor';
 $lang['amount_received'] =  'Jumlah yang Diterima';

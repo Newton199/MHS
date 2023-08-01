@@ -1,14 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 4.8.3
+-- version 5.1.1
 -- https://www.phpmyadmin.net/
 --
--- Host: localhost:3306
--- Generation Time: Mar 17, 2020 at 06:03 AM
--- Server version: 10.3.22-MariaDB-log-cll-lve
--- PHP Version: 7.2.7
+-- Host: 127.0.0.1
+-- Generation Time: Apr 15, 2023 at 10:41 AM
+-- Server version: 10.4.20-MariaDB
+-- PHP Version: 7.3.29
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
 
@@ -19,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `rajbjszc_multi-hms-new`
+-- Database: `database_tables`
 --
 
 -- --------------------------------------------------------
@@ -89,6 +88,13 @@ CREATE TABLE `appointment` (
   `request` varchar(100) CHARACTER SET utf8 DEFAULT NULL,
   `hospital_id` varchar(100) CHARACTER SET utf8 DEFAULT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `appointment`
+--
+
+INSERT INTO `appointment` (`id`, `patient`, `doctor`, `date`, `time_slot`, `s_time`, `e_time`, `remarks`, `add_date`, `registration_time`, `s_time_key`, `status`, `user`, `request`, `hospital_id`) VALUES
+(414, '33', '149', '1677538800', 'Not Selected', 'Not Selected', '', 'tauko futyo', '02/28/23', '1677578321', '0', 'Requested', '', 'Yes', '416');
 
 -- --------------------------------------------------------
 
@@ -493,6 +499,13 @@ CREATE TABLE `lab` (
   `hospital_id` varchar(100) CHARACTER SET utf8 DEFAULT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
+--
+-- Dumping data for table `lab`
+--
+
+INSERT INTO `lab` (`id`, `category`, `patient`, `doctor`, `date`, `category_name`, `report`, `status`, `user`, `patient_name`, `patient_phone`, `patient_address`, `doctor_name`, `date_string`, `hospital_id`) VALUES
+(1926, NULL, '', '149', '1678748400', NULL, '<table align=\"center\" border=\"1\" cellpadding=\"1\" cellspacing=\"1\" summary=\"Result Of Lipid Profile \">\r\n <caption>Lipid Profile Result</caption>\r\n <tbody>\r\n  <tr>\r\n   <td>SL</td>\r\n   <td>Test Name</td>\r\n   <td>Test Result</td>\r\n   <td>? Reference Valur</td>\r\n   <td>? Comment</td>\r\n  </tr>\r\n  <tr>\r\n   <td>?1</td>\r\n   <td>\r\n   <h1>Lipid Profile</h1>\r\n   </td>\r\n   <td>? ? 100</td>\r\n   <td>? ? >10 < 150</td>\r\n   <td>? ?Normal</td>\r\n  </tr>\r\n  <tr>\r\n   <td>?2</td>\r\n   <td>? ?Lipid Profile?</td>\r\n   <td>? ??100</td>\r\n   <td>? ? >10 < 150</td>\r\n   <td>? ?Normal</td>\r\n  </tr>\r\n  <tr>\r\n   <td>?3</td>\r\n   <td>? ?Lipid Profile?</td>\r\n   <td>? ??100</td>\r\n   <td>? ??&gt;10 < 150</td>\r\n   <td>? ?Normal</td>\r\n  </tr>\r\n  <tr>\r\n   <td>?4</td>\r\n   <td>? ?Lipid Profile?</td>\r\n   <td>? ? 100</td>\r\n   <td>? ??&gt;10 < 150</td>\r\n   <td>? ?Normal</td>\r\n  </tr>\r\n </tbody>\r\n</table>\r\n\r\n<p>?</p>\r\n', NULL, '2', '0', '0', '0', 'Mr Doctor', '14-03-23', '416');
+
 -- --------------------------------------------------------
 
 --
@@ -588,6 +601,13 @@ CREATE TABLE `medicine` (
   `hospital_id` varchar(100) DEFAULT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
+--
+-- Dumping data for table `medicine`
+--
+
+INSERT INTO `medicine` (`id`, `name`, `category`, `price`, `box`, `s_price`, `quantity`, `generic`, `company`, `effects`, `e_date`, `add_date`, `hospital_id`) VALUES
+(2866, 'Flexon', 'Paracetamol', '30', '7', '35', 1358, 'paracetamol', 'nepal', 'tauko dukhe paxi matra khane', '06-12-2025', '02/28/23', '416');
+
 -- --------------------------------------------------------
 
 --
@@ -600,6 +620,13 @@ CREATE TABLE `medicine_category` (
   `description` varchar(100) CHARACTER SET utf8 DEFAULT NULL,
   `hospital_id` varchar(100) CHARACTER SET utf8 DEFAULT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `medicine_category`
+--
+
+INSERT INTO `medicine_category` (`id`, `category`, `description`, `hospital_id`) VALUES
+(19, 'Paracetamol', 'Tauko  dhukheko ma', '416');
 
 -- --------------------------------------------------------
 
@@ -629,6 +656,14 @@ CREATE TABLE `notice` (
   `type` varchar(100) CHARACTER SET utf8 DEFAULT NULL,
   `hospital_id` varchar(100) CHARACTER SET utf8 DEFAULT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `notice`
+--
+
+INSERT INTO `notice` (`id`, `title`, `description`, `date`, `type`, `hospital_id`) VALUES
+(16, 'Hospital Close at  Holi', '<p>On the  ocassion of holi  hospital will be closed </p>\r\n', '1678057200', 'patient', '416'),
+(17, 'New  year  close', '<p>hospital will be close in   new year </p>\r\n\r\n<p> </p>\r\n', '1681423200', 'patient', '416');
 
 -- --------------------------------------------------------
 
@@ -741,7 +776,7 @@ CREATE TABLE `patient` (
 --
 
 INSERT INTO `patient` (`id`, `img_url`, `name`, `email`, `doctor`, `address`, `phone`, `sex`, `birthdate`, `age`, `bloodgroup`, `ion_user_id`, `patient_id`, `add_date`, `registration_time`, `how_added`, `hospital_id`) VALUES
-(33, '', 'Mr Patient', 'patient@hms.com', '', 'Florida', '+0123456789', 'Male', '07-07-2019', '', 'A+', '750', '727265', '07/07/19', '1562482338', '', '416');
+(33, '', 'Mr Patient', 'patient@hms.com', ',149', 'Florida', '+0123456789', 'Male', '07-07-2019', '', 'A+', '750', '727265', '07/07/19', '1562482338', '', '416');
 
 -- --------------------------------------------------------
 
@@ -761,6 +796,14 @@ CREATE TABLE `patient_deposit` (
   `user` varchar(100) CHARACTER SET utf8 DEFAULT NULL,
   `hospital_id` varchar(100) CHARACTER SET utf8 DEFAULT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `patient_deposit`
+--
+
+INSERT INTO `patient_deposit` (`id`, `patient`, `payment_id`, `date`, `deposited_amount`, `amount_received_id`, `deposit_type`, `gateway`, `user`, `hospital_id`) VALUES
+(1594, '33', '2021', '1677407087', '85', '2021.gp', 'Cash', NULL, '2', '416'),
+(1595, '33', '2022', '1677407088', '85', '2022.gp', 'Cash', NULL, '2', '416');
 
 -- --------------------------------------------------------
 
@@ -818,13 +861,21 @@ CREATE TABLE `payment` (
   `hospital_id` varchar(100) CHARACTER SET utf8 DEFAULT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
+--
+-- Dumping data for table `payment`
+--
+
+INSERT INTO `payment` (`id`, `category`, `patient`, `doctor`, `date`, `amount`, `vat`, `x_ray`, `flat_vat`, `discount`, `flat_discount`, `gross_total`, `remarks`, `hospital_amount`, `doctor_amount`, `category_amount`, `category_name`, `amount_received`, `deposit_type`, `status`, `user`, `patient_name`, `patient_phone`, `patient_address`, `doctor_name`, `date_string`, `hospital_id`) VALUES
+(2021, NULL, '33', '149', '1677407087', '100', '0', NULL, NULL, '5', '5', '95', 'f', '90', '5', NULL, '128*100*diagnostic*1', '85', 'Cash', 'unpaid', '2', 'Mr Patient', '+0123456789', 'Florida', 'Mr Doctor', '26-02-23', '416'),
+(2022, NULL, '33', '149', '1677407088', '100', '0', NULL, NULL, '5', '5', '95', 'f', '90', '5', NULL, '128*100*diagnostic*1', '85', 'Cash', 'unpaid', '2', 'Mr Patient', '+0123456789', 'Florida', 'Mr Doctor', '26-02-23', '416');
+
 -- --------------------------------------------------------
 
 --
--- Table structure for table `paymentGateway`
+-- Table structure for table `paymentgateway`
 --
 
-CREATE TABLE `paymentGateway` (
+CREATE TABLE `paymentgateway` (
   `id` int(100) NOT NULL,
   `name` varchar(100) CHARACTER SET utf8 DEFAULT NULL,
   `merchant_key` varchar(100) CHARACTER SET utf8 DEFAULT NULL,
@@ -839,10 +890,10 @@ CREATE TABLE `paymentGateway` (
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `paymentGateway`
+-- Dumping data for table `paymentgateway`
 --
 
-INSERT INTO `paymentGateway` (`id`, `name`, `merchant_key`, `salt`, `x`, `y`, `APIUsername`, `APIPassword`, `APISignature`, `status`, `hospital_id`) VALUES
+INSERT INTO `paymentgateway` (`id`, `name`, `merchant_key`, `salt`, `x`, `y`, `APIUsername`, `APIPassword`, `APISignature`, `status`, `hospital_id`) VALUES
 (1, 'PayPal', '', '', '', '', 'API Username', 'API Password', 'API Signature', 'test', '416'),
 (2, 'Pay U Money', 'Merchant Key', 'Salt', '', '', '', '', 'Aaw-Fd69z.JLuiq13ejMN-CsSMuuAPEXWUFPF5QW9sD22fp1hosGIFKo', 'test', '416'),
 (48, 'PayPal', NULL, NULL, NULL, NULL, 'PayPal API Username', 'PayPal API Password', 'PayPal API Signature', 'test', '452'),
@@ -1408,11 +1459,11 @@ CREATE TABLE `users` (
 
 INSERT INTO `users` (`id`, `ip_address`, `username`, `password`, `salt`, `email`, `activation_code`, `forgotten_password_code`, `forgotten_password_time`, `remember_code`, `created_on`, `last_login`, `active`, `first_name`, `last_name`, `company`, `phone`, `hospital_ion_id`) VALUES
 (1, '127.0.0.1', 'superadmin', '$2y$08$1Rvlfb8r7JXT9SZtzbGYGuttL1p7G4ULzMtOOb4YkxCHuU383eEGK', '', 'superadmin@hms.com', '', 'eX0.Bq6nP57EuXX4hJkPHO973e7a4c25f1849d3a', 1511432365, 'zCeJpcj78CKqJ4sVxVbxcO', 1268889823, 1584437172, 1, 'Super', 'Admin', 'ADMIN', '0', ''),
-(2, '127.0.0.1', 'Hospital', '$2y$08$nxWYs4Sc9VN6czyUtnJRwuMaflhMRZSV33GESf5zi8rjXGfaSHVlu', NULL, 'admin@hms.com', NULL, NULL, NULL, NULL, 1268889832, 1584437404, 1, 'admin', NULL, NULL, NULL, ''),
-(750, '110.76.129.146', 'Mr Patient', '$2y$08$vTCe3Z4D1j7bVT49XXzoY.PiVP6yMFZ7hBudIbOfRE0vbEtaw5AOa', NULL, 'patient@hms.com', NULL, NULL, NULL, NULL, 1562482338, 1562485101, 1, NULL, NULL, NULL, NULL, '2'),
-(751, '110.76.129.146', 'Mr Doctor', '$2y$08$ehhf9vK8Of7YuYL34uhlAel7HT/IOG/afe1/cHebJOOs2MuEhFTyu', NULL, 'doctor@hms.com', NULL, NULL, NULL, NULL, 1562482389, 1576214710, 1, NULL, NULL, NULL, NULL, '2'),
-(752, '110.76.129.146', 'Mrs Nurse', '$2y$08$ZjfXG10xA.CitrTOK5SC6uXiAL2FnKgLOuUEWIGzlXECkTaMW3b3C', NULL, 'nurse@hms.com', NULL, NULL, NULL, NULL, 1562482422, NULL, 1, NULL, NULL, NULL, NULL, '2'),
-(753, '110.76.129.146', 'Mr. Pharmacist', '$2y$08$KbnWZrJMhY6BTaEBp.0NJO1sbXaNzT7boNMdScBJMFrOUGljv2QWS', NULL, 'pharmacist@hms.com', NULL, NULL, NULL, NULL, 1562482455, NULL, 1, NULL, NULL, NULL, NULL, '2'),
+(2, '127.0.0.1', 'Hospital', '$2y$08$nxWYs4Sc9VN6czyUtnJRwuMaflhMRZSV33GESf5zi8rjXGfaSHVlu', NULL, 'admin@hms.com', NULL, NULL, NULL, NULL, 1268889832, 1679402869, 1, 'admin', NULL, NULL, NULL, ''),
+(750, '110.76.129.146', 'Mr Patient', '$2y$08$vTCe3Z4D1j7bVT49XXzoY.PiVP6yMFZ7hBudIbOfRE0vbEtaw5AOa', NULL, 'patient@hms.com', NULL, NULL, NULL, NULL, 1562482338, 1679366270, 1, NULL, NULL, NULL, NULL, '2'),
+(751, '110.76.129.146', 'Mr Doctor', '$2y$08$ehhf9vK8Of7YuYL34uhlAel7HT/IOG/afe1/cHebJOOs2MuEhFTyu', NULL, 'doctor@hms.com', NULL, NULL, NULL, NULL, 1562482389, 1679366118, 1, NULL, NULL, NULL, NULL, '2'),
+(752, '110.76.129.146', 'Mrs Nurse', '$2y$08$ZjfXG10xA.CitrTOK5SC6uXiAL2FnKgLOuUEWIGzlXECkTaMW3b3C', NULL, 'nurse@hms.com', NULL, NULL, NULL, NULL, 1562482422, 1677582247, 1, NULL, NULL, NULL, NULL, '2'),
+(753, '110.76.129.146', 'Mr. Pharmacist', '$2y$08$KbnWZrJMhY6BTaEBp.0NJO1sbXaNzT7boNMdScBJMFrOUGljv2QWS', NULL, 'pharmacist@hms.com', NULL, NULL, NULL, NULL, 1562482455, 1677582303, 1, NULL, NULL, NULL, NULL, '2'),
 (754, '110.76.129.146', 'Mr Laboratorist', '$2y$08$DU10ibM6SJlw8dK7WER5qeYmRWM/Jl51OxnhpOHvPiTa4lxLBrgjC', NULL, 'laboratorist@hms.com', NULL, NULL, NULL, NULL, 1562482499, NULL, 1, NULL, NULL, NULL, NULL, '2'),
 (755, '110.76.129.146', 'Mr Accountant', '$2y$08$ysIjt93NUbQITf/jtbdAPOGisj2wrT07GCQUC0eJBbqrhZYijp9hq', NULL, 'accountant@hms.com', NULL, NULL, NULL, NULL, 1562482536, NULL, 1, NULL, NULL, NULL, NULL, '2'),
 (756, '110.76.129.146', 'Mr Receptionist', '$2y$08$QGdhZzdJE3Wz76yBlRlLmew.7GimX8MBel8JQiyR8u3uIUQpqTt.m', NULL, 'receptionist@hms.com', NULL, NULL, NULL, NULL, 1562482561, 1562482625, 1, NULL, NULL, NULL, NULL, '2');
@@ -1688,9 +1739,9 @@ ALTER TABLE `payment`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `paymentGateway`
+-- Indexes for table `paymentgateway`
 --
-ALTER TABLE `paymentGateway`
+ALTER TABLE `paymentgateway`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -1842,7 +1893,7 @@ ALTER TABLE `alloted_bed`
 -- AUTO_INCREMENT for table `appointment`
 --
 ALTER TABLE `appointment`
-  MODIFY `id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=414;
+  MODIFY `id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=415;
 
 --
 -- AUTO_INCREMENT for table `bankb`
@@ -1938,7 +1989,7 @@ ALTER TABLE `hospital`
 -- AUTO_INCREMENT for table `lab`
 --
 ALTER TABLE `lab`
-  MODIFY `id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1926;
+  MODIFY `id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1928;
 
 --
 -- AUTO_INCREMENT for table `laboratorist`
@@ -1968,13 +2019,13 @@ ALTER TABLE `medical_history`
 -- AUTO_INCREMENT for table `medicine`
 --
 ALTER TABLE `medicine`
-  MODIFY `id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2866;
+  MODIFY `id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2867;
 
 --
 -- AUTO_INCREMENT for table `medicine_category`
 --
 ALTER TABLE `medicine_category`
-  MODIFY `id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
+  MODIFY `id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
 
 --
 -- AUTO_INCREMENT for table `module`
@@ -1986,7 +2037,7 @@ ALTER TABLE `module`
 -- AUTO_INCREMENT for table `notice`
 --
 ALTER TABLE `notice`
-  MODIFY `id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
+  MODIFY `id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
 
 --
 -- AUTO_INCREMENT for table `nurse`
@@ -2016,7 +2067,7 @@ ALTER TABLE `patient`
 -- AUTO_INCREMENT for table `patient_deposit`
 --
 ALTER TABLE `patient_deposit`
-  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1594;
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1596;
 
 --
 -- AUTO_INCREMENT for table `patient_material`
@@ -2028,12 +2079,12 @@ ALTER TABLE `patient_material`
 -- AUTO_INCREMENT for table `payment`
 --
 ALTER TABLE `payment`
-  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2021;
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2023;
 
 --
--- AUTO_INCREMENT for table `paymentGateway`
+-- AUTO_INCREMENT for table `paymentgateway`
 --
-ALTER TABLE `paymentGateway`
+ALTER TABLE `paymentgateway`
   MODIFY `id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=58;
 
 --

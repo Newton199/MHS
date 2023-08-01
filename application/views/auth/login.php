@@ -9,8 +9,8 @@
         <meta name="keyword" content="Php, Hospital, Clinic, Management, Software, Php, CodeIgniter, Hms, Accounting">
         <link rel="shortcut icon" href="uploads/favicon.png">
 
-        <title>Login - 
-            <?php
+        <title>Login -
+         <?php
             $this->db->where('hospital_id', 'superadmin');
             echo $this->db->get('settings')->row()->system_vendor;
             ?>
@@ -52,10 +52,7 @@
 
             <form class="form-signin" method="post" action="auth/login">
                 <h2 class="login form-signin-heading">
-                    <?php
-                    $this->db->where('hospital_id', 'superadmin');
-                    echo $this->db->get('settings')->row()->title;
-                    ?>
+                  Hamro Hospital Portal
                     <br/><br/>
                     <img alt="" src="uploads/favicon.png">
                 </h2>
