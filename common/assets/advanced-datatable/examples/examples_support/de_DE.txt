@@ -1,4 +1,4 @@
-{
+ {
 	"sProcessing": "Bitte warten...",
 	"sLengthMenu": "_MENU_ Einträge anzeigen",
 	"sZeroRecords": "Keine Einträge vorhanden.",

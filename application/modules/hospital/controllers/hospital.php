@@ -6,7 +6,7 @@ if (!defined('BASEPATH'))
 class Hospital extends MX_Controller {
 
     function __construct() {
-        parent::__construct();
+        parent::__construct(); 
 
         $this->load->model('hospital_model');
         $this->load->model('hospital/package_model');

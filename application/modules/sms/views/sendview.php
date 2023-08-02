@@ -15,7 +15,7 @@
                             <?php echo lang('list_of_sent_messages'); ?>
                         </button>
                     </a>
-
+ 
                     <form role="form" class="clearfix" action="sms/send" method="post">
                         <label class="control-label">         
                             <?php echo lang('send_sms_to'); ?>

@@ -12,7 +12,7 @@
                     <div class="adv-table editable-table ">
                         <div class="clearfix">
                             <div class="col-lg-12">
-                                <section class="panel">
+                                <section class="panel"> 
                                     <div class="panel-body">
                                         <?php echo validation_errors(); ?>
                                         <form role="form" action="sms/addNewSettings" method="post" enctype="multipart/form-data">

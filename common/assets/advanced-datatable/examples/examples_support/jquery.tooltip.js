@@ -1,4 +1,4 @@
-/*
+ /*
  * jQuery Tooltip plugin 1.3
  *
  * http://bassistance.de/jquery-plugins/jquery-plugin-tooltip/

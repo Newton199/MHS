@@ -12,7 +12,7 @@
                 else
                     echo '<i class="fa fa-plus-circle"></i> ' . lang('add_slide');
                 ?>
-            </header>
+            </header> 
             <div class="panel-body">
                 <div class="adv-table editable-table ">
                     <div class="clearfix">

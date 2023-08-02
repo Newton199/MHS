@@ -12,7 +12,7 @@
                 } else {
                     echo lang('add_new_package');
                 }
-                ?>
+                ?> 
             </header>
             <div class="panel-body">
                 <div class="adv-table editable-table ">

@@ -10,7 +10,7 @@
                     <a data-toggle="modal" class="pull-right" href="hospital/addNewView">
                         <div class="btn-group">
                             <button id="" class="btn green">
-                                <i class="fa fa-plus-circle"></i>   <?php echo lang('create_new_hospital'); ?>
+                              <i class="fa fa-plus-circle"></i>   <?php echo lang('create_new_hospital'); ?>
                             </button>
                         </div>
                     </a>

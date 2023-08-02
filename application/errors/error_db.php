@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <title>Database Error</title>
-<style type="text/css">
+<style type="text/css"> 
 
 ::selection{ background-color: #E13300; color: white; }
 ::moz-selection{ background-color: #E13300; color: white; }

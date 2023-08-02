@@ -1,4 +1,4 @@
-;
+ ;
 (function ($, window, document, undefined) {
     var pluginName = 'mateHover',
         defaults = {

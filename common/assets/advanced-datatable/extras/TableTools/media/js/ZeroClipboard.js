@@ -22,7 +22,7 @@ var ZeroClipboard_TableTools = {
 			thingy.hasClass = function(name) {
 				return !!this.className.match( new RegExp("\\s*" + name + "\\s*") );
 			}
-		}
+		}  
 		return thingy;
 	},
 	

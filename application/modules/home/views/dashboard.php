@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-
+ 
 <html lang="en" <?php
 if (!$this->ion_auth->in_group(array('superadmin'))) {
     $this->db->where('hospital_id', $this->hospital_id);

@@ -6,7 +6,7 @@ if (!defined('BASEPATH'))
 class pgateway extends MX_Controller {
 
     function __construct() {
-        parent::__construct();
+        parent::__construct(); 
         $this->load->model('pgateway_model');
         $this->load->model('patient/patient_model');
         $this->load->model('donor/donor_model');

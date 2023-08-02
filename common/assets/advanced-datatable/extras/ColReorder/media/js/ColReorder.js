@@ -8,7 +8,7 @@
  * Modified:    $Date$ by $Author$
  * Language:    Javascript
  * License:     GPL v2 or BSD 3 point style
- * Project:     DataTables
+ * Project:     DataTables 
  * Contact:     www.sprymedia.co.uk/contact
  * 
  * Copyright 2010-2011 Allan Jardine, all rights reserved.

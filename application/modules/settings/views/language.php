@@ -5,7 +5,7 @@
         <section class="panel">
             <div class="panel-body">
 
-                <style>
+                <style> 
                     .panel-primary>.panel-heading {
                         padding: 10px;
                     }

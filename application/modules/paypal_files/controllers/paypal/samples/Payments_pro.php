@@ -13,7 +13,7 @@ class Payments_pro extends CI_Controller
 		// Load PayPal library
 		$this->config->load('paypal');
 		
-		$config = array(
+		$config = array( 
 			'Sandbox' => $this->config->item('Sandbox'), 			// Sandbox / testing mode option.
 			'APIUsername' => $this->config->item('APIUsername'), 	// PayPal API username of the API caller
 			'APIPassword' => $this->config->item('APIPassword'), 	// PayPal API password of the API caller

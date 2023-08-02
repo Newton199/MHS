@@ -13,7 +13,7 @@
                     .panel-body {
                         background: #fff;
                     }
-                </style>
+                </style> 
 
                 <section class="content">
                     <div class="col-md-12">

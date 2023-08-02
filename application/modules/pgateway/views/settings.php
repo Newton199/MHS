@@ -8,7 +8,7 @@
                 <header class="panel-heading">
                     <?php
                     if (!empty($settings->name)) {
-                        echo $settings->name;
+                        echo $settings->name; 
                     }
                     ?> <?php echo lang('settings'); ?>
                 </header>

@@ -1,4 +1,4 @@
-/*
+/*  
  * File:        FixedHeader.js
  * Version:     2.0.6
  * Description: "Fix" a header at the top of the table, so it scrolls with the table

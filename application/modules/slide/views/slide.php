@@ -16,7 +16,7 @@
                         </div>
                     </a>
                 </div>
-            </header>
+            </header> 
             <div class="panel-body">
                 <div class="adv-table editable-table ">
                     <div class="space15"></div>

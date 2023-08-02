@@ -10,7 +10,7 @@
                     echo  lang('edit_bed_category');
                 else
                     echo  lang('add_bed_category');
-                ?>
+                ?> 
             </header>
             <div class="panel-body">
                 <div class="adv-table editable-table ">

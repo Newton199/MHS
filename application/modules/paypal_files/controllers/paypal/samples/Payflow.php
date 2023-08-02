@@ -20,7 +20,7 @@ class Payflow extends CI_Controller
 				'APIPartner' => $this->config->item('PayFlowPartner')
 		);
 		
-		if($config['Sandbox'])
+		if($config['Sandbox']) 
 		{
 			// Show Errors
 			error_reporting(E_ALL);

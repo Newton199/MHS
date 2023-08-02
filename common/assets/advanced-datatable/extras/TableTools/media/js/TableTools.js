@@ -13,7 +13,7 @@
  * BSD style license, available at:
  *   http://datatables.net/license_gpl2
  *   http://datatables.net/license_bsd
- */
+ */ 
 
 /* Global scope for TableTools */
 var TableTools;

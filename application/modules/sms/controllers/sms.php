@@ -13,7 +13,7 @@ class Sms extends MX_Controller {
         $this->load->model('doctor/doctor_model');
     }
 
-    public function index() {
+    public function index() { 
         $data = array();
         $id = $this->ion_auth->get_user_id();
         $data['settings'] = $this->settings_model->getSettings();

@@ -11,7 +11,7 @@
                     <?php echo lang('patient'); ?> <?php echo lang('info'); ?> 
                 </div>
 
-            </header> 
+            </header>  
 
 
 

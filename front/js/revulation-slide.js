@@ -1,4 +1,4 @@
-var RevSlide = function () {
+ var RevSlide = function () {
 
     return {
 

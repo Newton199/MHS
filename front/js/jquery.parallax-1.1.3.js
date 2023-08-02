@@ -1,4 +1,4 @@
-/*
+ /*
 Plugin: jQuery Parallax
 Version 1.1.3
 Author: Ian Lunn

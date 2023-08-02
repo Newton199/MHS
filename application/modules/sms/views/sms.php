@@ -15,7 +15,7 @@
                     <div class="space15"></div>
                     <table class="table table-striped table-hover table-bordered" id="editable-sample">
                         <thead>
-                            <tr>
+                            <tr> 
                                 <th>#</th>
                                 <th><?php echo lang('date'); ?></th>
                                 <th><?php echo lang('message'); ?></th>

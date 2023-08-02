@@ -1,4 +1,4 @@
-<?php if ( ! defined('BASEPATH')) exit('No direct script access allowed'); 
+ <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed'); 
 /**
  * 	Angell EYE PayPal PayFlow CodeIgniter Library
  *	An open source PHP library written to easily work with PayPal's PayFlow API's

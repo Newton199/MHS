@@ -1,4 +1,4 @@
-/*!
+ /*!
  * fancyBox - jQuery Plugin
  * version: 2.1.3 (Tue, 23 Oct 2012)
  * @requires jQuery v1.6 or later

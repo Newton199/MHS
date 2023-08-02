@@ -12,7 +12,7 @@
                     <div class=" panel clearfix"> 
                         <button class="export" onclick="javascript:window.print();">Print</button>  
                     </div>
-                    <div class="space15"></div>
+                    <div class="space15"></div> 
                     <table class="table table-striped table-hover table-bordered" id="editable-sample">
                         <thead>
                             <tr>

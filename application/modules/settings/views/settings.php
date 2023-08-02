@@ -6,7 +6,7 @@
         <section class="panel">
             <header class="panel-heading">
                 <?php echo lang('settings'); ?>
-            </header>
+            </header> 
             <div class="panel-body">
                 <div class="adv-table editable-table ">
                     <div class="clearfix row">

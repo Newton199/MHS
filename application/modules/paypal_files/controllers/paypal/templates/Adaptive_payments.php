@@ -6,7 +6,7 @@ class Adaptive_payments extends CI_Controller
 	{
 		parent::__construct();
 		
-		// Load helpers
+		// Load helpers 
 		$this->load->helper('url');
 		
 		// Load PayPal library

@@ -1,4 +1,4 @@
-<?php
+ <?php
 
 $lang['email_must_be_array'] = "The email validation method must be passed an array.";
 $lang['email_invalid_address'] = "Invalid email address: %s";

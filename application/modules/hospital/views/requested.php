@@ -7,7 +7,7 @@
             <header class="panel-heading">
                 <i class="fa fa-hospital-o"></i>  <?php echo lang('all_hospitals'); ?>
             </header>
-
+ 
             <style>
                 .editbutton{
                     width: auto !important;

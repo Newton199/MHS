@@ -13,7 +13,7 @@ package {
 	import flash.system.System;
 	import flash.net.FileReference;
 	import flash.net.FileFilter;
-	
+	 
 	/* PDF imports */
 	import org.alivepdf.pdf.PDF;
 	import org.alivepdf.data.Grid;

@@ -14,7 +14,7 @@ require dirname(__FILE__).'/Base.php';
  * and adds features allowing use of modules and the HMVC design pattern.
  *
  * Install this file as application/third_party/MX/Controller.php
- *
+ * 
  * @copyright	Copyright (c) 2011 Wiredesignz
  * @version 	5.4
  * 

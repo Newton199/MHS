@@ -4,7 +4,7 @@
 
 <style type="text/css">
 
-body {
+body { 
  background-color: #fff;
  margin: 40px;
  font-family: Lucida Grande, Verdana, Sans-serif;

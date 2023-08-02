@@ -14,7 +14,7 @@ class Slide_model extends CI_model {
         $this->db->insert('slide', $data);
     }
 
-    function getSlide() {
+    function getSlide() { 
         $query = $this->db->get('slide');
         return $query->result();
     }

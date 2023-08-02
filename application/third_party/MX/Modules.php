@@ -13,7 +13,7 @@ is_array(Modules::$locations = $CFG->item('modules_locations')) OR Modules::$loc
 spl_autoload_register('Modules::autoload');
 
 /**
- * Modular Extensions - HMVC
+ * Modular Extensions - HMVC 
  *
  * Adapted from the CodeIgniter Core Classes
  * @link	http://codeigniter.com

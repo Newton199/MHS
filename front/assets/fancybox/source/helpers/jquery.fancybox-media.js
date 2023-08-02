@@ -7,7 +7,7 @@
  *     $(".fancybox").fancybox({
  *         helpers : {
  *             media: true
- *         }
+ *          }
  *     });
  *
  * Set custom URL parameters:

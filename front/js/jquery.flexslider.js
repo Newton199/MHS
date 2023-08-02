@@ -1,4 +1,4 @@
-/*
+ /*
  * jQuery FlexSlider v2.1
  * http://www.woothemes.com/flexslider/
  *

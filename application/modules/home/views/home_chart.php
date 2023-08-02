@@ -15,7 +15,7 @@
                         <span class="expense_color"> </span>Expense: <?php echo $settings->currency . ' ' . $this_month[1]; ?></span>
                     </div>
                 </section>
-
+ 
             <?php } ?>
 
 

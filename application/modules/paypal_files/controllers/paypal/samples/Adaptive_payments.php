@@ -10,7 +10,7 @@ class Adaptive_payments extends CI_Controller
 		$this->load->helper('url');
 		
 		// Load PayPal library
-		$this->config->load('paypal');
+		$this->config->load('paypal'); 
 		
 		$config = array(
 			'Sandbox' => $this->config->item('Sandbox'), 			// Sandbox / testing mode option.

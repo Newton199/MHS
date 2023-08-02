@@ -6,7 +6,7 @@
             <div class="panel-body">
 
                  <style>
-                    .panel-primary>.panel-heading {
+                    .panel-primary>.panel-heading { 
                         padding: 10px;
                     }
                     

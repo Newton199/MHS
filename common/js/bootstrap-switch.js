@@ -8,7 +8,7 @@
 
 !function ($) {
   "use strict";
-
+ 
   $.fn['bootstrapSwitch'] = function (method) {
     var methods = {
       init: function () {

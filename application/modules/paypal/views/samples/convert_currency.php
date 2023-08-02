@@ -6,7 +6,7 @@
 </head>
 
 <body>
-<?php
+<?php 
 echo '<pre />';
 print_r($PayPalResult);
 ?>

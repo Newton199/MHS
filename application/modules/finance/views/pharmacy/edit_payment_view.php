@@ -4,7 +4,7 @@
     <section class="wrapper site-min-height">
         <!-- page start-->
         <section class="">
-            <header class="panel-heading">
+            <header class="panel-heading"> 
                 <?php
                 if (!empty($payment->id))
                     echo lang('edit_payment');

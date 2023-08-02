@@ -1,4 +1,4 @@
-<?php
+ <?php
   /* MySQL connection */
 	include( $_SERVER['DOCUMENT_ROOT']."/datatables/mysql.php" ); /* ;-) */
 	

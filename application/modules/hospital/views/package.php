@@ -8,7 +8,7 @@
                 <i class="fa fa-package-o"></i>  <?php echo lang('all_packages'); ?>
             </header>
 
-            <style>
+            <style>  
                 .editbutton{
                     width: auto !important;
                 }

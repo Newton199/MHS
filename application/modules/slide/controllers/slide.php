@@ -13,7 +13,7 @@ class Slide extends MX_Controller {
         }
     }
 
-    public function index() {
+    public function index() { 
 
         $data['slides'] = $this->slide_model->getSlide();
         $this->load->view('home/dashboard'); // just the header file

@@ -8,7 +8,7 @@
                 <i class="fa fa-gear"></i> <?php echo lang('website'); ?> <?php echo lang('settings'); ?>
             </header>
 
-
+ 
             <style>
 
                 form {

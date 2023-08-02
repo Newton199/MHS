@@ -8,7 +8,7 @@
                 <?php
                 if (!empty($bed->id))
                     echo lang('edit_bed');
-                else
+                else 
                     echo lang('add_bed');
                 ?>
             </header>

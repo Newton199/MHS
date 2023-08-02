@@ -1,4 +1,4 @@
-<?php
+ <?php
 
 $lang['migration_none_found']			= "No migrations were found.";
 $lang['migration_not_found']			= "This migration could not be found.";

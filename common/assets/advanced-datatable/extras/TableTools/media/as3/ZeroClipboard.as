@@ -12,7 +12,7 @@ package {
 	import flash.utils.*;
 	import flash.system.System;
 	import flash.net.FileReference;
-	import flash.net.FileFilter;
+	import flash.net.FileFilter; 
  
 	public class ZeroClipboard extends Sprite {
 		

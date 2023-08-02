@@ -14,7 +14,7 @@ class Sms_model extends CI_model {
         $this->db->where('id', $id);
         $query = $this->db->get('sms_settings');
         return $query->row();
-    }
+    } 
 
     function getSmsByUser($user) {
         $this->db->order_by('id', 'desc');

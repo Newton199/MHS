@@ -1,4 +1,4 @@
-/**
+ /**
  * BxSlider v4.1.1 - Fully loaded, responsive content slider
  * http://bxslider.com
  *

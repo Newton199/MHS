@@ -8,7 +8,7 @@
         <!--
                 <div class="state-overview col-md-12" style="padding: 23px 0px;">
         <?php if ($this->ion_auth->in_group(array('admin', 'Accoutant', 'Receptionist'))) { ?> 
-                                                                                                    <div class="col-lg-2 col-sm-12">
+                                                                                                     <div class="col-lg-2 col-sm-12">
                                                                                                         <a href="finance/addPaymentView">
                                                                                                             <div class="panel-heading"> <?php echo lang('add_payment'); ?> </div>
                                                                                                         </a>

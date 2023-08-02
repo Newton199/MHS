@@ -12,7 +12,7 @@
  *             }
  *         }
  *     });
- *
+ * 
  */
 (function ($) {
 	//Shortcut for fancyBox object

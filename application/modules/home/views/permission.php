@@ -14,7 +14,7 @@
         <link href="common/css/bootstrap-reset.css" rel="stylesheet">
         <!--external css-->
         <link href="common/assets/font-awesome/css/font-awesome.css" rel="stylesheet" />
-        <!-- Custom styles for this template -->
+        <!-- Custom styles for this template --> 
         <link href="common/css/style.css" rel="stylesheet">
         <link href="common/css/style-responsive.css" rel="stylesheet" />
 

@@ -1,7 +1,7 @@
 // DATA_TEMPLATE: dom_data
 oTest.fnStart( "Sanity checks for DataTables with DOM data" );
 
-oTest.fnTest( 
+oTest.fnTest(  
 	"jQuery.dataTable function",
 	null,
 	function () { return typeof jQuery().dataTable == "function"; }

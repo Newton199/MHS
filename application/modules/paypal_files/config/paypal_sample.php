@@ -14,8 +14,8 @@ $config['Sandbox'] = TRUE;
  * The library is currently using PayPal API version 123.0.
  * You may adjust this value here and then pass it into the PayPal object when you create it within your scripts to override if necessary.
  */
-$config['APIVersion'] = '123.0';
-
+$config['APIVersion'] = '123.0'; 
+ 
 /*
  * PayPal Gateway API Credentials
  * ------------------------------

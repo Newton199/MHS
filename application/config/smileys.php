@@ -10,7 +10,7 @@
 | Please see user guide for more info:
 | http://codeigniter.com/user_guide/helpers/smiley_helper.html
 |
-*/
+*/ 
 
 $smileys = array(
 

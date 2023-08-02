@@ -14,7 +14,7 @@ class Status extends CI_Controller {
         $this->load->model('pgateway/pgateway_model');
         $this->load->library('session');
     }
-
+ 
     public function index() {
         $status = $this->input->post('status');
         if (empty($status)) {

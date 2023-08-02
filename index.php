@@ -3,7 +3,7 @@
 
 	define('ENVIRONMENT', 'production');
 
-
+ 
 if (defined('ENVIRONMENT'))
 {
 	switch (ENVIRONMENT)

@@ -1,4 +1,4 @@
-var Script = function () {
+ var Script = function () {
 
 
 //    tool tips

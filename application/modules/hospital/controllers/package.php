@@ -6,7 +6,7 @@ if (!defined('BASEPATH'))
 class Package extends MX_Controller {
 
     function __construct() {
-        parent::__construct();
+        parent::__construct(); 
         $this->load->library('Ion_auth');
         $this->load->library('session');
         $this->load->library('form_validation');

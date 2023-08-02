@@ -11,7 +11,7 @@
                         <div class="btn-group pull-right">
                             <button id="" class="btn green btn-xs">
                                 <i class="fa fa-plus-circle"></i> <?php echo lang('add_new'); ?>
-                            </button>
+                             </button>
                         </div>
                     </a>
                 </div>

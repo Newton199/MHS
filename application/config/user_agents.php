@@ -9,7 +9,7 @@
 | and the array values are used to set the actual name of the item.
 |
 */
-
+ 
 $platforms = array (
 					'windows nt 6.0'	=> 'Windows Longhorn',
 					'windows nt 5.2'	=> 'Windows 2003',

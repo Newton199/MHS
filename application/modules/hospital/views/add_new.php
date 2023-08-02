@@ -9,7 +9,7 @@
                 <?php
                 if (!empty($hospital->id)) {
                     echo lang('edit_hospital');
-                } else {
+                } else { 
                     echo lang('add_new_hospital');
                 }
                 ?>

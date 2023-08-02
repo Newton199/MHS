@@ -10,7 +10,7 @@ require_once dirname(__FILE__).'/Config.php';
  * Adapted from the CodeIgniter Core Classes
  * @link	http://codeigniter.com
  *
- * Description:
+ * Description: 
  * This library creates a CI class which allows the use of modules in an application.
  *
  * Install this file as application/third_party/MX/Ci.php

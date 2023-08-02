@@ -1,5 +1,5 @@
 /*
- * File:        KeyTable.js
+ * File:         KeyTable.js
  * Version:     1.1.7
  * CVS:         $Idj$
  * Description: Keyboard navigation for HTML tables

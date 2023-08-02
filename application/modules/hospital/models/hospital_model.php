@@ -7,7 +7,7 @@ class Hospital_model extends CI_model {
 
     function __construct() {
         parent::__construct();
-        $this->load->database();
+        $this->load->database(); 
     }
 
     function hospitalId() {

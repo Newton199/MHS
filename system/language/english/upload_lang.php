@@ -1,4 +1,4 @@
-<?php
+ <?php
 
 $lang['upload_userfile_not_set'] = "Unable to find a post variable called userfile.";
 $lang['upload_file_exceeds_limit'] = "The uploaded file exceeds the maximum allowed size in your PHP configuration file.";

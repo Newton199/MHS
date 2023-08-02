@@ -4,11 +4,11 @@ if (!defined('BASEPATH'))
     exit('No direct script access allowed');
 
 class Payu extends MX_Controller {
-
-    function __construct() {
+ 
+    function __construct() { 
         parent::__construct();
         $this->load->library('Ion_auth');
-        $this->load->library('session');
+        $this->load->library('session'); 
         $this->load->library('form_validation');
         $this->load->model('patient/patient_model');
         $this->load->library('upload');

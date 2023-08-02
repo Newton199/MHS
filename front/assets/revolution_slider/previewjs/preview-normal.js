@@ -7,7 +7,7 @@ jQuery(document).ready(function() {
 					jQuery('.rotbutcont').css({'opacity':'0.4'});
 					jQuery('.premium').each(function() {
 						jQuery(this).html(jQuery(this).html()+" ( **not in IE )");
-					});
+		 			});
 				}
 
 		// ROTATE THE RADIO BUTTON HERE
